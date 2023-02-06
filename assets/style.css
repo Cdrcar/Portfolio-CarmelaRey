@@ -1,6 +1,7 @@
 :root {
     --border-right:1px solid gray;
     --box-shadow:0 7px 20px 0 rgba(0,0,0,0.2),0 4px 10px 0 rgba(0,0,0,0.2) ;
+    --color: #ce6868; 
 }
 * {
     margin: 0;
@@ -43,7 +44,7 @@ header {
 
 h1 {
     font-size: 25px;
-    color: #ce6868;
+    color: var(--color);
     margin-left: 70px;
     margin-top: 25px;
 }
@@ -62,7 +63,7 @@ header li {
     list-style: none;   
 }
 header a {
-    color: #ce6868;
+    color: var(--color);
     text-decoration: none;
     text-align: center;
   }
@@ -70,6 +71,13 @@ header a {
   header a:hover {
     font-size: medium;
   }
+
+/* Main */
+main {
+   display: flex;
+   flex-wrap: wrap;
+}
+
 aside {
     padding: 20px;
     font-size: 25px;
@@ -84,7 +92,7 @@ aside {
     margin-bottom: 80px;
     padding-right: 5px;
     border-right: var(--border-right);
-    color: #ce6868;
+    color: var(--color);
   }
 
 #About-Me {
@@ -99,17 +107,18 @@ aside {
     height: 100px;
 }
 
-/* Main */
-.flex-container {
-   display: flex;
-}
-
-.projects {
-    width: 70%;
+div .projects {
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     display: inline-block;
     margin-top: 80px;
+    flex: 3;
+}
+h3 {
+    color: white;
+    text-shadow: 4px 4px 13px #ce6868;
+    background-color: var(--color) ;
 }
 
 .about-me {
@@ -120,14 +129,8 @@ aside {
     color: rgb(69, 69, 69);
 }
 
-h3 {
-    color: white;
-    text-shadow: 4px 4px 13px #ce6868;
-    background-color:#ce6868 ;
-}
-
 .work {
-    justify-content: right;
+    justify-content: center;
     padding: 5px;
     font-size: 20px;
     display: flex;
@@ -138,7 +141,7 @@ h3 {
 }
     
 .project-1 {
-width: 598px;
+width: 120%;
 height: 300px;
 box-shadow: var(--box-shadow);
 display: flex;
@@ -151,8 +154,7 @@ flex-wrap: wrap;
     left: 6px;
 }
 .project-1:hover {
-    border: 1px solid rgb(163, 114, 182);
-    box-shadow: 15px;
+    border: 1.5px solid var(--color);
 }
 
 .other-projects {
@@ -165,24 +167,23 @@ flex-wrap: wrap;
 
 }
 .image3 {
-    width: 194px;
+    width: 20%;
     box-shadow: var(--box-shadow);
 }
 
 .image3:hover {
-    border: 1px solid rgb(163, 114, 182);
-    box-shadow: 15px;
+    border: 1px solid var(--color);
 }
 
 .contact-me {
-    margin-top: 79px;
+    margin-top: 90px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .contact-me li{
     display: inline;
-    padding: 15px;
+    padding: 38px;
     list-style: none;
 }
 
@@ -192,4 +193,27 @@ flex-wrap: wrap;
 
 .contact-me a:hover {
     font-size:large;
+}
+@media screen and (max-width: 768px) {
+    .project-1 {
+        width: 100%;
+    }
+    .image3 {
+        width: 29%;
+        }
+
+    .contact-me li {
+        padding:2px ;
+        font-size: small;
+    }
+    }
+}
+
+@media screen and (max-width: 928px) {
+    .project-1 {
+        width: 109%;
+    }
+    .image3 {
+    width: 90%;
+    }
 }
