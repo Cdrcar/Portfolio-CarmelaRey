@@ -1,7 +1,8 @@
 :root {
-    --border-right:1px solid gray;
+    --border-left:1px solid gray;
     --box-shadow:0 7px 20px 0 rgba(0,0,0,0.2),0 4px 10px 0 rgba(0,0,0,0.2) ;
     --color: #ce6868; 
+    --color2: #852323;
 }
 * {
     margin: 0;
@@ -35,7 +36,7 @@ body, html {
     position: relative;
   }
 
-header {
+  header {
     padding-top: 20px;
     border-bottom: 1px solid gray;
     box-shadow: var(--box-shadow);
@@ -48,6 +49,11 @@ h1 {
     margin-left: 70px;
     margin-top: 25px;
 }
+
+h1::first-letter {
+    font-size: larger;
+}
+
   
 header nav{
     font-size: 20px;
@@ -68,152 +74,131 @@ header a {
     text-align: center;
   }
 
-  header a:hover {
+header a:hover {
     font-size: medium;
   }
 
-/* Main */
 main {
-   display: flex;
-   flex-wrap: wrap;
+    max-width: 90%;
+    margin: 40px auto;
+}
+section {
+    display: flex;
 }
 
-aside {
-    padding: 20px;
+section h2 {
+    min-width: 30%;
+    max-width: 30%;
+    color: var(--color);
     font-size: 25px;
     text-align: right;
-    width: 25%;
-    height: 100%;
-    flex: 1;
-    margin-top: 45px;
-  }
-
-.aside {
-    margin-bottom: 80px;
-    padding-right: 5px;
-    border-right: var(--border-right);
-    color: var(--color);
-  }
-
-#About-Me {
-    height: 100px;
-    margin-top: 15px;      
-}
-#Work {
-    height: 445px;
+    margin-top: 50px;
+    margin-right: 10px;
 }
 
-#Contact-Me {
-    height: 100px;
+h2::first-letter {
+    font-size: 50px;
 }
 
-div .projects {
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    display: inline-block;
-    margin-top: 80px;
-    flex: 3;
-}
 h3 {
-    color: white;
-    text-shadow: 4px 4px 13px #ce6868;
-    background-color: var(--color) ;
+    font-size: 25px;
+    margin-bottom: 8px;
 }
 
-.about-me {
-    padding: 5px;
-    font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    color: rgb(69, 69, 69);
+.projects {
+    padding: 20px;
+    border-left: var(--border-left);
+    margin: 35px 0;
+    width: 100%;
+    color: var(--color2);
+    font-size: 18px;
 }
 
-.work {
-    justify-content: center;
-    padding: 5px;
-    font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    display: inline-block;
-    margin-top: 78px;
-    position: relative;
-}
-    
 .project-1 {
-width: 120%;
-height: 300px;
-box-shadow: var(--box-shadow);
-display: flex;
-flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("./image2.png");
+    background-size: cover;
+    position: relative;
 }
 
 .bottom-left{
     position: absolute;
-    bottom: 8px;
-    left: 6px;
+    bottom: 6px;
+    left: 5px;
+    text-align: center;
+    color: var(--color);
 }
 .project-1:hover {
     border: 1.5px solid var(--color);
 }
 
-.other-projects {
-   
-    padding: 5px;
-    font-size: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    display: inline-block;
-
-}
-.image3 {
-    width: 20%;
-    box-shadow: var(--box-shadow);
+.others {
+    float: left;
+    width: 32.3%;
+    margin: 3px;
 }
 
-.image3:hover {
+.others:hover {
     border: 1px solid var(--color);
 }
 
-.contact-me {
-    margin-top: 90px;
+.other-projects {
+    height: 80px;
+    box-shadow: var(--box-shadow);
     display: flex;
     flex-wrap: wrap;
+    background-image: url("./image2.png");
+    position: relative; 
 }
 
+.contact-me {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
 .contact-me li{
     display: inline;
-    padding: 38px;
+    padding: 50px;
     list-style: none;
+    font-size: 15px;
 }
 
 .contact-me a {
-    color: black;
+    color:var(--color2);
 }
 
 .contact-me a:hover {
     font-size:large;
 }
-@media screen and (max-width: 768px) {
-    .project-1 {
-        width: 100%;
-    }
-    .image3 {
-        width: 29%;
-        }
 
-    .contact-me li {
-        padding:2px ;
-        font-size: small;
+footer {
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color:var(--color2);
+    margin-bottom: 20px;
+}
+@media screen and (max-width:1116px) {
+    .contact-me li{
+        font-size: smaller;
+        padding: 10px;
     }
+}
+@media screen and (max-width:768px) {
+    .contact-me li{
+        font-size: smaller;
+        padding: 5px;
     }
 }
 
-@media screen and (max-width: 928px) {
-    .project-1 {
-        width: 109%;
-    }
-    .image3 {
-    width: 90%;
+@media screen and (max-width:967px){
+    .others {
+        width: 30%;
     }
 }
