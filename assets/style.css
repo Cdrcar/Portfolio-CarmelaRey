@@ -1,9 +1,12 @@
+/* Variable*/
 :root {
     --border-left:1px solid gray;
     --box-shadow:0 7px 20px 0 rgba(0,0,0,0.2),0 4px 10px 0 rgba(0,0,0,0.2) ;
     --color: #ce6868; 
     --color2: #852323;
 }
+
+/*Style whole web*/
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +18,8 @@ body, html {
     display: flex;
     flex-direction: column;
 }
+
+/* Background image */
 
 .bg-image {
   position: fixed;
@@ -35,6 +40,8 @@ body, html {
     overflow: auto;
     position: relative;
   }
+
+/* Header */
 
   header {
     padding-top: 20px;
@@ -78,6 +85,7 @@ header a:hover {
     font-size: medium;
   }
 
+  /* Main */
 main {
     max-width: 90%;
     margin: 40px auto;
@@ -175,6 +183,8 @@ h3 {
     font-size:large;
 }
 
+/*Footer*/
+
 footer {
     display: table;
     text-align: center;
@@ -184,6 +194,9 @@ footer {
     color:var(--color2);
     margin-bottom: 20px;
 }
+
+/* Media queries */
+
 @media screen and (max-width:1116px) {
     .contact-me li{
         font-size: smaller;
