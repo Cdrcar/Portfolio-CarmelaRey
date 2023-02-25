@@ -220,10 +220,5 @@ footer {
 @media screen and (max-width:914px){
     .others {
         width: 30%;
-        flex-shrink: inherit;
-        text-align: center;
-        
-        
-    }
-
+}
 }
