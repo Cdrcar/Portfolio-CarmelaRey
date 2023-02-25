@@ -94,6 +94,10 @@ section {
     display: flex;
 }
 
+.intro {
+    font-size: 18px;
+}
+
 section h2 {
     min-width: 30%;
     max-width: 30%;
@@ -109,7 +113,7 @@ h2::first-letter {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 40px;
     margin-bottom: 8px;
 }
 
@@ -141,6 +145,7 @@ h3 {
     left: 5px;
     text-align: center;
     color: var(--color);
+    font-size: smaller;
 }
 .project-1:hover {
     border: 1.5px solid var(--color);
