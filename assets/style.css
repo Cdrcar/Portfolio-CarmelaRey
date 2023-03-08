@@ -1,6 +1,6 @@
 /* Variable*/
 :root {
-    --border-left:1px solid gray;
+    --border-left:1px solid #ce6868;
     --box-shadow:0 7px 20px 0 rgba(0,0,0,0.2),0 4px 10px 0 rgba(0,0,0,0.2) ;
     --color: #ce6868; 
     --color2: #852323;
@@ -34,6 +34,7 @@ body, html {
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
   filter: blur(5px);
+  
 }
 
 .content {
@@ -50,25 +51,34 @@ body, html {
     width: 100%;
 }
 
-h1 {
-    font-size: 25px;
-    color: var(--color);
-    margin-left: 70px;
-    margin-top: 25px;
+.h1 {
+
+position: fixed;
+left: 0%;
+top: 0%;
+right: 0%;
+bottom: auto;
+z-index: 1;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+height: 80px;
+padding-left: 10px;
+padding-right: 10px;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+border-bottom: 1px solid #ce6868;
+background-color: #f7ddda;
 }
 
-h1::first-letter {
-    font-size: larger;
-}
 
-  
-header nav{
-    font-size: 20px;
-    justify-content:right;
-    display: flex;
-    flex: 1;
-    min-width: 20rem; 
-}
 
 header li {
     display: inline-block;
