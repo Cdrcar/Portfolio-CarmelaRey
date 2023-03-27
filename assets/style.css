@@ -148,22 +148,6 @@ h3 {
     flex-direction: column;
 }
 
-/* .project-1 {
-    width: 99%;
-    height: 200px;
-    box-shadow: var(--box-shadow);
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url("./image2.png");
-    background-size: cover;
-    position: relative;
-    border-radius: 5px;
-} */
-
-
-/* .project-1:hover {
-    border: 1.5px solid var(--color);
-} */
 
 .cards-container {
     float: left;
@@ -189,7 +173,7 @@ h3 {
     /* background-image: url("./image2.png"); */
     position: relative; 
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* .password{
@@ -206,7 +190,7 @@ h3 {
 } */
 
 img {
-    width: 80%;
+    width: 90%;
     height: 80%;
     margin: 0 auto;
     display: flex;
