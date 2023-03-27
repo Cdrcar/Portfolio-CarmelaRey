@@ -145,9 +145,10 @@ h3 {
     font-size: 18px;
     display: inline;
     text-align: center;
+    flex-direction: column;
 }
 
-.project-1 {
+/* .project-1 {
     width: 99%;
     height: 200px;
     box-shadow: var(--box-shadow);
@@ -157,6 +158,62 @@ h3 {
     background-size: cover;
     position: relative;
     border-radius: 5px;
+} */
+
+
+/* .project-1:hover {
+    border: 1.5px solid var(--color);
+} */
+
+.cards-container {
+    float: left;
+    width: 44%;
+    margin: 25px;
+}
+
+/* .other2,
+.other3 {
+    margin-left: 5px;
+} */
+
+.cards-container:hover {
+    border: 1px solid var(--color);
+}
+
+.projects {
+    height: 400px;
+    box-shadow: var(--box-shadow);
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+    /* background-image: url("./image2.png"); */
+    position: relative; 
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* .password{
+    background-image: url("./password.png");
+    height: 300px;  
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-around;
+    position: relative; 
+    border-radius: 5px;
+    padding: 10px;
+    overflow: content-box;
+    
+} */
+
+img {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    transform: scale(0.9);
+    overflow: clip;
 }
 
 .bottom-left{
@@ -164,36 +221,8 @@ h3 {
     bottom: 6px;
     left: 5px;
     text-align: center;
-    color: var(--color);
+    color: var(--color2);
     font-size: smaller;
-}
-.project-1:hover {
-    border: 1.5px solid var(--color);
-}
-
-.others {
-    float: left;
-    width: 32.3%;
-    margin: 3px;
-}
-
-.other2,
-.other3 {
-    margin-left: 5px;
-}
-
-.others:hover {
-    border: 1.5px solid var(--color);
-}
-
-.other-projects {
-    height: 80px;
-    box-shadow: var(--box-shadow);
-    display: flex;
-    justify-content: center;
-    background-image: url("./image2.png");
-    position: relative; 
-    border-radius: 5px;
 }
 
 .contact-me {
