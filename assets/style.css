@@ -175,8 +175,13 @@ h3 {
     text-align: center;
     flex-direction: column;
 }
-
-
+.project-name {
+    font-size: 16px;
+    text-align: left;
+}
+.project-name:hover{
+    color: #ce6868;
+}
 img {
     width: 90%;
     height: 80%;
@@ -189,10 +194,11 @@ img {
 .bottom-left{
     position: absolute;
     bottom: 6px;
-    left: 5px;
-    text-align: center;
+    left: 25px;
+    right: 25px;
+    text-align: left;
     color: var(--color2);
-    font-size: smaller;
+    font-size: 12px;
     text-decoration: none;
 
 }
