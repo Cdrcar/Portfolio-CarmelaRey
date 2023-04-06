@@ -95,15 +95,58 @@ section {
   display: flex;
 }
 
-.intro-box {
-  width: 45rem;
-  text-align: left;
-  margin-left: 60px;
+
+
+section h2 {
+  min-width: 16%;
+  max-width: 16%;
+  text-align: center;
+  margin-top: 60px;
+  margin-right: 10px;
+  flex-wrap: wrap;
+  font-size: 25px;
+  margin-bottom: 8px;
+  color: #ce6868;
+  opacity: 1;
 }
+
+h2::first-letter {
+  font-size: 50px;
+}
+
+.cards-about {
+  border-left: var(--border-left);
+  margin: 40px 0px;
+  width: 100%;
+  color: var(--color2);
+  font-size: 6px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+#welcome {
+  width: 40rem;
+  text-align: left;
+}
+h3 {
+  font-size: 60px;
+  margin-bottom: 8px;
+  margin-left: 80px;
+  color: #ffece8;
+  text-shadow: 4px 4px 13px #ce6868;
+  opacity: 1;
+  margin-left: 120px;
+}
+
 .intro {
   font-size: 16px;
 }
-
+.intro-box {
+  width: 50rem;
+  margin-top: 2rem;
+  text-align: left;
+  margin-left: 120px;
+  
+}
 .icons {
   display: flex;
   align-items: center;
@@ -129,45 +172,6 @@ section {
  background-color: rgba(251, 237, 237, 0.5);
 }
 
-section h2 {
-  min-width: 16%;
-  max-width: 16%;
-  text-align: center;
-  margin-top: 60px;
-  margin-right: 10px;
-  flex-wrap: wrap;
-  font-size: 25px;
-  margin-bottom: 8px;
-  color: #ce6868;
-  opacity: 1;
-}
-
-h2::first-letter {
-  font-size: 50px;
-}
-
-#welcome {
-  width: 40rem;
-  text-align: left;
-}
-h3 {
-  font-size: 60px;
-  margin-bottom: 8px;
-  margin-left: 60px;
-  color: #ffece8;
-  text-shadow: 4px 4px 13px #ce6868;
-  opacity: 1;
-}
-.cards-about {
-  border-left: var(--border-left);
-  margin: 40px 0px;
-  width: 100%;
-  color: var(--color2);
-  font-size: 6px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-}
 .cards {
   border-left: var(--border-left);
   margin: 40px 0px;
@@ -181,11 +185,13 @@ h3 {
 }
 
 .cards-container {
-  float: left;
+  
   width: 44%;
   margin: 25px;
   justify-content: center;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects:hover {
@@ -193,7 +199,9 @@ h3 {
 }
 
 .projects {
-  height: 420px;
+  max-width: 600px;
+  height: 500px;
+  max-height: 500px;
   box-shadow: var(--box-shadow);
   position: relative;
   border-radius: 5px;
@@ -214,10 +222,12 @@ h3 {
 .description {
   background-color:rgba(251, 237, 237, 0.65); 
   border-radius: 5px;
+  max-height: 200px;
+  
 }
 img {
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -226,7 +236,7 @@ img {
 
 .bottom-left {
   position: absolute;
-  bottom: 6px;
+  bottom: 10px;
   left: 25px;
   right: 25px;
   text-align: left;
@@ -244,7 +254,7 @@ img {
   padding: 30px;
   list-style: none;
   font-size: 15px;
-  justify-content: center;
+  justify-content: space-around
   margin: auto;
 }
 
@@ -297,3 +307,4 @@ footer {
     width: 70%;
   }
 }
+
