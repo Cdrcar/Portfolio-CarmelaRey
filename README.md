@@ -1,27 +1,47 @@
-# Portfolio 
 
+  # Portfolio
 
-I am a junior full-stack we developer and here I have created my personal portfolio from the ground up.
+  ## [Table of Contents](#table-of-contents)
 
-## Content
+  - [Description](#description)
+  - [Final Result](#final-result)
+  - [Library](#library)
+  - [License](#license)
+  - [Author](#author)
+  - [Contact Me](#contact)
 
-This portfolio includes information about how to contact me and links to my projects.
-The technologies I used to create this web app were HTML and CSS.
+  ## [Description](#table-of-contents)
 
-## Deployment
-Link: [Portfolio](https://cdrcar.github.io/Portfolio-CarmelaRey/)
+  Here I have created my personal portfolio from the ground up.
 
-## Final Result
-![Portfolio Carmela Rey](./assets/Portfolio.png)
+  ## [Final Result](#table-of-contents)
+  ![Portfolio Carmela Rey](./assets/Portfolio.png)
+  
+  ## [Library](#table-of-contents)
 
-## Library
 [Google Fonts](https://fonts.google.com/)
 
 [Font Awesome](https://fontawesome.com/)
 
-## Author
-👤 Carmela Rey
+  ## [License](#table-of-contents)
+  Licenced under:
+    
+    
+  [MIT](https://choosealicense.com/licenses/MIT)
+    
+    
 
-GitHub: [cdrcar](https://github.com/)
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+  ![badge](https://img.shields.io/badge/license-MIT-green>)
+  
+
+
+ ## [Author](#table-of-contents)
+
+👤 Carmela Rey
+  ## [Contact Me](#table-of-contents)
+
+  - [GitHub](https://github.com/cdrcar)
+
+  - [Email: carmela881@outlook.com](mailto:carmela881@outlook.com)
+
+
